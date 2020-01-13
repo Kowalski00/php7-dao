@@ -16,10 +16,18 @@ require_once("config.php");
 // $usu -> login("user","4321");
 // echo $usu;
 
-$aluno = new Usuario("aluno2","senha");
+// Insert
+// $aluno = new Usuario("aluno2","senha");
+// $aluno->insert();
+// echo $aluno;
 
-$aluno->insert();
+// Update
+$usuario = new usuario();
 
-echo $aluno;
+$usuario->loadById(9);
+
+$usuario->update("Professor","PassProf");
+
+echo $usuario;
 
 ?>
