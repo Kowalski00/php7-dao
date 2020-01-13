@@ -22,11 +22,15 @@ require_once("config.php");
 // echo $aluno;
 
 // Update
+// $usuario = new usuario();
+// $usuario->loadById(9);
+// $usuario->update("Professor","PassProf");
+// echo $usuario;
+
+// Delete
 $usuario = new usuario();
-
 $usuario->loadById(9);
-
-$usuario->update("Professor","PassProf");
+$usuario->delete();
 
 echo $usuario;
 
